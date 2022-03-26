@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+section {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.order-head {
+  display: grid;
+  place-content: center;
+  background: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1rem;
+}
+.order-img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.order-head h3 {
+  text-align: center;
+  padding: 1rem 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.order-head p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  color: hsl(224, 23%, 55%);
+}
+.section-img,
+.order-head {
+  max-width: 18rem;
+}
+.section-center {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: minmax(275px, 1440px);
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+}
+.annual-plan {
+  color: hsl(224, 23%, 55%);
+}
+.annual-plan h4 {
+  margin-bottom: 0.3rem;
+  color: hsl(223, 47%, 23%);
+}
+.link a {
+  font-weight: 600;
+  transition: 1s;
+  color: hsl(245, 75%, 52%);
+}
+.link a:hover {
+  color: hsl(223, 47%, 23%);
+}
+.buttons {
+  width: 100%;
+  max-width: 20rem;
+}
+.btn {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+  border-radius: 10px;
+  background: hsl(245, 75%, 52%);
+  border-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+.btn:hover {
+  background: hsl(223, 47%, 23%);
+}
+.cancel-btn {
+  width: 100%;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 800;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: 1s;
+}
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+/*  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 992px) {
+  section {
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
